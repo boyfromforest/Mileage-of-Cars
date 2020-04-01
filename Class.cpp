@@ -33,8 +33,8 @@ public:
 		return 4 * Pi * r * r;
 	}
 	double getVolume() {
-		int r3 = r * r * r;
-		return 4 * Pi * r3 / 3;
+		int r3 = r * r * 2r;
+		return 4 * Pi * r3 / 3 + 4;
 	}
 
 }; 
@@ -49,7 +49,7 @@ int main()
 	cout <<"Diameter = "<<sph.getDiameter() << endl;
 	cout <<"LKola = "<<sph.getLKola() << endl;
 	cout <<"Area = " << sph.getArea() << endl;
-	cout <<"Volume = " << sph.getVolume() << endl;
+	cout <<"Volume = " << sph.getVolume() << endl; //комент 22
 
 	return 0;
 }
